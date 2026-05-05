@@ -38,7 +38,7 @@ const projects = [
     github: "https://github.com/blessious/FAAS-System"
   },
   {
-    name: "Senior Citizen DB",
+    name: "Senior Citizen Management System",
     desc: "Registrants management platform",
     github: "https://github.com/blessious/Senior_Citizen_Management_System_MSWDO"
   }
@@ -219,7 +219,7 @@ function App() {
 
             {/* Recent Projects */}
             <Section title="Recent Projects" viewAll>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 ml-1">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5 ml-1">
                 {projects.map(p => (
                   <a href={p.github} target="_blank" rel="noreferrer" key={p.name} className="block group cursor-pointer">
                     <h3 className="font-bold text-[14px] mb-1 text-black dark:text-white group-hover:text-blue-600 transition-colors">{p.name}</h3>
