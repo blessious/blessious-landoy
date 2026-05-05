@@ -139,7 +139,7 @@ function App() {
                   <ChevronRight className="w-3 h-3" />
                 </span>
                 <span className="bg-emerald-600 text-white px-2.5 py-1 text-[11px] font-bold flex items-center gap-1">
-                  CSC Eligible
+                  Civil Service Eligible
                   <CheckCircle className="w-3 h-3 fill-white text-emerald-600" />
                 </span>
               </div>
