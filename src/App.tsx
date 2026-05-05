@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Mail, FileText, ChevronRight, Download, Moon, Sun } from 'lucide-react';
+import { MapPin, Calendar, Mail, FileText, ChevronRight, Download, Moon, Sun, CheckCircle } from 'lucide-react';
 
 const techStack = {
   frontend: ["JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "WordPress"],
@@ -133,10 +133,16 @@ function App() {
 
             <div className="flex flex-wrap items-center gap-3 mb-6 text-[13px] font-bold text-black dark:text-[#ececec]">
               <span>Software Developer \ Full Stack \ Systems Architecture</span>
-              <span className="bg-blue-600 text-white px-2.5 py-1 text-[11px] font-bold flex items-center gap-1">
-                BSCpE 2022 Graduate
-                <ChevronRight className="w-3 h-3" />
-              </span>
+              <div className="flex gap-2">
+                <span className="bg-blue-600 text-white px-2.5 py-1 text-[11px] font-bold flex items-center gap-1">
+                  BSCpE 2022 Graduate
+                  <ChevronRight className="w-3 h-3" />
+                </span>
+                <span className="bg-emerald-600 text-white px-2.5 py-1 text-[11px] font-bold flex items-center gap-1">
+                  CSC Eligible
+                  <CheckCircle className="w-3 h-3 fill-white text-emerald-600" />
+                </span>
+              </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-2 mt-4 text-[12px] font-bold">
