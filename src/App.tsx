@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { BadgeCheck, MapPin, Calendar, Mail, FileText, ChevronRight, Download, Moon, Sun } from 'lucide-react';
+import { MapPin, Calendar, Mail, FileText, ChevronRight, Download, Moon, Sun } from 'lucide-react';
 
 const techStack = {
   frontend: ["JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "WordPress"],
@@ -123,7 +123,7 @@ function App() {
           <div className="flex-1 pt-1 w-full">
             <div className="flex items-center gap-2 mb-1.5">
               <h1 className="text-2xl font-bold tracking-tight text-black dark:text-white">Blessious Joseph Landoy</h1>
-              <BadgeCheck className="text-blue-500 w-5 h-5 fill-current bg-white dark:bg-black rounded-full border-2 border-white dark:border-black" />
+              <img src="/verified.png" alt="Verified" className="w-5 h-5" />
             </div>
 
             <div className="flex items-center gap-1.5 text-gray-600 dark:text-gray-400 mb-4 text-[13px] font-bold">
