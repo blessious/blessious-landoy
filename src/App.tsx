@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Mail, FileText, ChevronRight, Download, Moon, Sun, CheckCircle } from 'lucide-react';
+import { MapPin, Calendar, Mail, ChevronRight, Download, Moon, Sun, CheckCircle } from 'lucide-react';
 
 const techStack = {
   frontend: ["JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "WordPress"],
