@@ -311,23 +311,23 @@ function App() {
             <Section title="Skills & Interests">
               <div className="space-y-5 ml-1 py-1">
                 <div>
-                  <h3 className="text-[11px] font-bold text-black dark:text-white uppercase tracking-widest mb-2">Hardware & Software</h3>
-                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed">Installation, configuration, troubleshooting, system maintenance</p>
+                  <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Hardware & Software</h3>
+                  <p className="text-[12px] text-black dark:text-[#ececec] font-medium leading-relaxed">Installation, configuration, troubleshooting, system maintenance</p>
                 </div>
                 
                 <div>
-                  <h3 className="text-[11px] font-bold text-black dark:text-white uppercase tracking-widest mb-2">Software Tools</h3>
-                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed">Microsoft Office, Adobe Suite, antivirus solutions, backup and recovery tools</p>
+                  <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Software Tools</h3>
+                  <p className="text-[12px] text-black dark:text-[#ececec] font-medium leading-relaxed">Microsoft Office, Adobe Suite, antivirus solutions, backup and recovery tools</p>
                 </div>
 
                 <div>
-                  <h3 className="text-[11px] font-bold text-black dark:text-white uppercase tracking-widest mb-2">Programming</h3>
-                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed">Python, JavaScript, React.js, Node.js, SQL, WordPress, Next.js, Typescript, Claude Code, Lovable, Vercel</p>
+                  <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Programming</h3>
+                  <p className="text-[12px] text-black dark:text-[#ececec] font-medium leading-relaxed">Python, JavaScript, React.js, Node.js, SQL, WordPress, Next.js, Typescript, Claude Code, Lovable, Vercel</p>
                 </div>
                 
                 <div>
-                  <h3 className="text-[11px] font-bold text-black dark:text-white uppercase tracking-widest mb-2">Networking</h3>
-                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed">LAN/WAN setup, IP addressing, router and switch configuration, network troubleshooting</p>
+                  <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Networking</h3>
+                  <p className="text-[12px] text-black dark:text-[#ececec] font-medium leading-relaxed">LAN/WAN setup, IP addressing, router and switch configuration, network troubleshooting</p>
                 </div>
               </div>
             </Section>
