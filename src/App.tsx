@@ -328,6 +328,8 @@ function App() {
                 </div>
               </div>
             </Section>
+          </div>
+        </div>
 
         {/* Gallery */}
         <Gallery />
