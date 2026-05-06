@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Mail, ChevronRight, Download, Moon, Sun, CheckCircle } from 'lucide-react';
+import { MapPin, Calendar, Mail, ChevronRight, Download, Moon, Sun, CheckCircle, Code2, Shield, Database, Cpu } from 'lucide-react';
+import ChatWidget from './components/ChatWidget';
 
 const techStack = {
   frontend: ["JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "WordPress"],
@@ -81,6 +82,7 @@ const Section = ({ title, children, viewAll = false }: { title: string, children
 
 function App() {
   const [isDark, setIsDark] = useState(false);
+
 
   useEffect(() => {
     if (isDark) {
@@ -247,38 +249,36 @@ function App() {
           {/* Right Column */}
           <div>
 
-            {/* Access Card */}
-            {/* Access Card */}
-            <div className="bg-white dark:bg-[#1c1c1c] p-6 text-black dark:text-white relative overflow-hidden h-[340px] flex flex-col justify-between group hover:-translate-y-1 hover:rotate-[1deg] hover:shadow-xl transition-all duration-500 mb-3 rounded-2xl shadow-lg">
-              <div className="absolute inset-0 bg-gradient-to-br from-black/5 via-transparent to-black/10 dark:from-white/10 dark:via-transparent dark:to-black/60 transition-opacity duration-500 group-hover:opacity-80"></div>
-
-              <div className="relative z-10">
-                <div className="text-2xl font-bold tracking-tighter mb-2">&gt;_</div>
-                <h3 className="text-[13px] font-bold tracking-[0.15em] mb-1 opacity-90">FULL STACK DEVELOPER</h3>
-                <p className="text-[8px] opacity-40 tracking-[0.2em] font-bold">ACCESS CARD</p>
+            {/* Current Status Card */}
+            <div className="bg-white dark:bg-[#111] p-5 shadow-sm mb-3">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">Current Status</span>
               </div>
+              <p className="text-[12px] font-bold text-black dark:text-[#ececec] leading-relaxed mb-3">
+                Actively building scalable software for local government units and researching automated system workflows.
+              </p>
+              <div className="flex gap-3 text-[11px] font-bold text-gray-500 dark:text-gray-400">
+                <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> Remote / On-site</span>
+                <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> Full-time</span>
+              </div>
+            </div>
 
-              <div className="relative z-10 mt-auto pt-8">
-                <p className="text-[8px] opacity-40 tracking-[0.2em] font-bold mb-1">FOUNDING MEMBER</p>
-                <h2 className="text-xl font-bold tracking-widest mb-6 opacity-95">BLESSIOUS</h2>
-
-                <div className="flex justify-between items-end">
-                  <span className="text-[9px] opacity-40 font-bold tracking-[0.2em]">DEVELOPER</span>
-                  <div className="w-10 h-10 bg-black/5 dark:bg-white/5 p-1 flex items-center justify-center border border-black/10 dark:border-white/10 group-hover:bg-black/10 dark:group-hover:bg-white/10 transition-colors duration-500">
-                    <div className="w-full h-full bg-gray-400/20 mix-blend-overlay"></div>
-                  </div>
+            {/* Core Expertise Grid */}
+            <div className="grid grid-cols-2 gap-3 mb-3">
+              {[
+                { icon: <Code2 className="w-4 h-4 mb-2 text-blue-600 dark:text-blue-400" />, title: "Full-Stack", desc: "End-to-end web apps" },
+                { icon: <Shield className="w-4 h-4 mb-2 text-rose-600 dark:text-rose-400" />, title: "Security", desc: "Threat mitigation" },
+                { icon: <Database className="w-4 h-4 mb-2 text-indigo-600 dark:text-indigo-400" />, title: "Architecture", desc: "Scalable systems" },
+                { icon: <Cpu className="w-4 h-4 mb-2 text-emerald-600 dark:text-emerald-400" />, title: "Hardware", desc: "System diagnostics" }
+              ].map((item, i) => (
+                <div key={i} className="bg-white dark:bg-[#111] p-4 shadow-sm hover:-translate-y-0.5 transition-transform duration-300 cursor-default">
+                  {item.icon}
+                  <h3 className="text-[12px] font-bold text-black dark:text-white mb-1">{item.title}</h3>
+                  <p className="text-[10px] font-bold text-gray-500 dark:text-gray-400 leading-tight">{item.desc}</p>
                 </div>
-              </div>
+              ))}
             </div>
 
-            {/* Banner (Optional PH100 replacement) */}
-            <div className="bg-blue-600 p-3 flex items-center justify-between text-white mb-3 hover:brightness-110 transition-all cursor-pointer">
-              <div>
-                <h3 className="font-bold text-[14px] italic tracking-tight">INNOVATOR</h3>
-                <p className="text-[8px] font-bold opacity-80 mt-0.5"></p>
-              </div>
-              <ChevronRight className="w-4 h-4 opacity-50" />
-            </div>
 
             {/* Experience */}
             <Section title="Experience">
@@ -335,13 +335,8 @@ function App() {
 
         </div>
 
-        {/* Floating Chat Button */}
-        <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
-          <a href="mailto:landoyblessious@gmail.com" className="bg-[#1a1a1a] dark:bg-white text-white dark:text-black px-4 py-3 text-[12px] font-bold hover:-translate-y-1 hover:shadow-xl active:translate-y-0 transition-all duration-300 flex items-center gap-2 shadow-md border border-black dark:border-white">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-            Chat with Blessious
-          </a>
-        </div>
+        {/* AI Chat Widget */}
+        <ChatWidget />
 
       </div>
     </div>
