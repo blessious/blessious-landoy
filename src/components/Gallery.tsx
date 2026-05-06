@@ -25,13 +25,13 @@ export default function Gallery() {
   };
 
   return (
-    <section className="bg-white dark:bg-[#111] shadow-sm p-4 mb-3 transition-colors duration-300">
-      <h2 className="text-[18px] font-bold text-black dark:text-white mb-4">Gallery</h2>
+    <section className="bg-white dark:bg-[#111] shadow-sm p-5 md:p-6 mb-3 transition-colors duration-300">
+      <h2 className="text-[20px] font-extrabold text-black dark:text-white mb-5 tracking-tight">Gallery</h2>
       
-      <div className="relative group">
+      <div className="relative group -mx-2 md:mx-0">
         <button 
           onClick={() => scroll('left')}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 dark:bg-black/90 text-black dark:text-white p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors opacity-0 group-hover:opacity-100 disabled:opacity-0"
+          className="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.08)] text-gray-700 p-2.5 hover:bg-gray-50 transition-colors"
           aria-label="Previous image"
         >
           <ChevronLeft className="w-5 h-5" />
@@ -39,15 +39,15 @@ export default function Gallery() {
 
         <div 
           ref={scrollRef}
-          className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-2"
+          className="flex gap-2.5 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-2 px-2 md:px-0"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {galleryImages.map((img, idx) => (
-            <div key={idx} className="flex-none w-[280px] sm:w-[320px] aspect-video snap-center overflow-hidden border border-gray-200 dark:border-[#2a2a2a]">
+            <div key={idx} className="flex-none w-[85%] sm:w-[45%] md:w-[calc(25%-7.5px)] aspect-square snap-center overflow-hidden border border-gray-100 dark:border-[#222]">
               <img 
                 src={img.src} 
                 alt={img.alt} 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 cursor-pointer"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
                 loading="lazy"
               />
             </div>
@@ -56,7 +56,7 @@ export default function Gallery() {
 
         <button 
           onClick={() => scroll('right')}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 dark:bg-black/90 text-black dark:text-white p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors opacity-0 group-hover:opacity-100"
+          className="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.08)] text-gray-700 p-2.5 hover:bg-gray-50 transition-colors"
           aria-label="Next image"
         >
           <ChevronRight className="w-5 h-5" />

@@ -232,9 +232,6 @@ function App() {
               </div>
             </Section>
 
-            {/* Gallery */}
-            <Gallery />
-
             {/* Education */}
             <Section title="Education">
               <div className="space-y-0 ml-1">
@@ -338,6 +335,9 @@ function App() {
           </div>
 
         </div>
+
+        {/* Gallery */}
+        <Gallery />
 
         {/* AI Chat Widget */}
         <ChatWidget />
