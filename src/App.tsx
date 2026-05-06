@@ -237,9 +237,9 @@ function App() {
               <div className="space-y-0 ml-1">
                 {education.map((edu, i) => (
                   <div key={i} className="py-3 border-b border-gray-100 dark:border-[#222] last:border-0 last:pb-0 first:pt-0 group">
-                    <h3 className="font-bold text-[13px] text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">{edu.school}</h3>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400 font-bold mb-1">{edu.degree}</p>
-                    <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">{edu.year}</p>
+                    <h3 className="font-bold text-[14.5px] text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">{edu.school}</h3>
+                    <p className="text-[12px] text-black dark:text-[#ececec] font-medium mb-1">{edu.degree}</p>
+                    <p className="text-[11px] text-black dark:text-[#ececec] font-medium uppercase tracking-wider">{edu.year}</p>
                   </div>
                 ))}
               </div>
