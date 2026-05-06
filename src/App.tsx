@@ -289,6 +289,28 @@ function App() {
                 ))}
               </div>
             </Section>
+
+            {/* Recent Certifications */}
+            <Section title="Recent Certifications" viewAll>
+              <div className="space-y-4 ml-1">
+                <div className="group">
+                  <h3 className="text-[13px] font-bold text-black dark:text-white leading-tight group-hover:text-blue-600 transition-colors">Civil Service Professional Eligibility</h3>
+                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium">CSC - Professional Level (84.12%)</p>
+                </div>
+                <div className="group">
+                  <h3 className="text-[13px] font-bold text-black dark:text-white leading-tight group-hover:text-blue-600 transition-colors">Huawei Developer Expert</h3>
+                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium">Huawei</p>
+                </div>
+                <div className="group">
+                  <h3 className="text-[13px] font-bold text-black dark:text-white leading-tight group-hover:text-blue-600 transition-colors">Generative AI Leader</h3>
+                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium">Google</p>
+                </div>
+                <div className="group">
+                  <h3 className="text-[13px] font-bold text-black dark:text-white leading-tight group-hover:text-blue-600 transition-colors">Generative AI Professional</h3>
+                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium">Oracle</p>
+                </div>
+              </div>
+            </Section>
           </div>
         </div>
 
