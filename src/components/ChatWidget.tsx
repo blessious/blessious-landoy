@@ -123,7 +123,7 @@ export default function ChatWidget() {
     {
       id: '0',
       role: 'assistant',
-      text: "Hey! 👋 Thanks for stopping by. Feel free to ask me anything about my work, projects, or tech stack. Happy to chat!"
+      text: "Hey! 👋 Thanks for visiting my website! Feel free to ask me anything about my work, projects, or tech stack. Happy to chat!"
     }
   ]);
   const [input, setInput] = useState('');
