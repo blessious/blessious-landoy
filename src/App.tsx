@@ -255,10 +255,10 @@ function App() {
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">Current Status</span>
               </div>
-              <p className="text-[12px] font-bold text-black dark:text-[#ececec] leading-relaxed mb-3">
+              <p className="text-[12px] font-medium text-black dark:text-[#ececec] leading-relaxed mb-3">
                 Actively building scalable software for local government units and researching automated system workflows.
               </p>
-              <div className="flex gap-3 text-[11px] font-bold text-gray-500 dark:text-gray-400">
+              <div className="flex gap-3 text-[11px] font-medium text-black dark:text-[#ececec]">
                 <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> Remote / On-site</span>
                 <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> Full-time</span>
               </div>
@@ -275,7 +275,7 @@ function App() {
                 <div key={i} className="bg-white dark:bg-[#111] p-4 shadow-sm hover:-translate-y-0.5 transition-transform duration-300 cursor-default">
                   {item.icon}
                   <h3 className="text-[12px] font-bold text-black dark:text-white mb-1">{item.title}</h3>
-                  <p className="text-[10px] font-bold text-gray-500 dark:text-gray-400 leading-tight">{item.desc}</p>
+                  <p className="text-[10px] font-medium text-black dark:text-[#ececec] leading-tight">{item.desc}</p>
                 </div>
               ))}
             </div>
