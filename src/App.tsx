@@ -226,7 +226,7 @@ function App() {
                 {projects.map(p => (
                   <a href={p.github} target="_blank" rel="noreferrer" key={p.name} className="block group cursor-pointer">
                     <h3 className="font-bold text-[14px] mb-1 text-black dark:text-white group-hover:text-blue-600 transition-colors">{p.name}</h3>
-                    <p className="text-[12px] text-gray-600 dark:text-[#a1a1a1] font-bold mb-3 leading-snug">{p.desc}</p>
+                    <p className="text-[12px] text-black dark:text-[#ececec] font-medium mb-3 leading-snug">{p.desc}</p>
                   </a>
                 ))}
               </div>
@@ -293,9 +293,9 @@ function App() {
                       }`}></div>
                     <div className="flex justify-between items-start">
                       <div className="pr-2">
-                        <h3 className="font-bold text-[13px] text-black dark:text-white leading-tight mb-1 group-hover:text-blue-600 transition-colors">{exp.title}</h3>
-                        <p className="text-[11px] text-gray-800 dark:text-[#a1a1a1] font-bold mb-1">{exp.company}</p>
-                        <p className="text-[10px] text-gray-500 dark:text-gray-500 font-medium leading-relaxed italic">{exp.desc}</p>
+                        <h3 className="font-bold text-[14.5px] text-black dark:text-white leading-tight mb-1 group-hover:text-blue-600 transition-colors">{exp.title}</h3>
+                        <p className="text-[12px] text-black dark:text-[#ececec] font-medium mb-1">{exp.company}</p>
+                        <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed italic">{exp.desc}</p>
                       </div>
                       <div className="text-[10px] font-bold text-gray-500 dark:text-gray-400 pt-0.5 flex-shrink-0">
                         {exp.year}
