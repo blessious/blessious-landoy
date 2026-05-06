@@ -232,24 +232,10 @@ function App() {
               </div>
             </Section>
 
-            {/* Education */}
-            <Section title="Education">
-              <div className="space-y-0 ml-1">
-                {education.map((edu, i) => (
-                  <div key={i} className="py-3 border-b border-gray-100 dark:border-[#222] last:border-0 last:pb-0 first:pt-0 group">
-                    <h3 className="font-bold text-[14.5px] text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">{edu.school}</h3>
-                    <p className="text-[12px] text-black dark:text-[#ececec] font-medium mb-1">{edu.degree}</p>
-                    <p className="text-[11px] text-black dark:text-[#ececec] font-medium uppercase tracking-wider">{edu.year}</p>
-                  </div>
-                ))}
-              </div>
-            </Section>
-
           </div>
 
           {/* Right Column */}
           <div>
-
             {/* Current Status Card */}
             <div className="bg-white dark:bg-[#111] p-5 shadow-sm mb-3">
               <div className="flex items-center gap-2 mb-3">
@@ -280,11 +266,9 @@ function App() {
               ))}
             </div>
 
-
             {/* Experience */}
             <Section title="Experience">
               <div className="border-l-[1.5px] border-gray-200 dark:border-[#333] ml-[5px] space-y-6 pt-1">
-
                 {experience.map((exp, i) => (
                   <div key={i} className="relative pl-[18px] group cursor-pointer">
                     <div className={`absolute w-[9px] h-[9px] left-[-5.5px] top-1.5 transition-all duration-300 ${i === 0
@@ -303,38 +287,47 @@ function App() {
                     </div>
                   </div>
                 ))}
-
               </div>
             </Section>
+          </div>
+        </div>
 
-            {/* Skills & Interests */}
+        {/* Bottom Aligned Sections */}
+        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-x-3 gap-y-0">
+          <div>
+            <Section title="Education">
+              <div className="space-y-0 ml-1">
+                {education.map((edu, i) => (
+                  <div key={i} className="py-3 border-b border-gray-100 dark:border-[#222] last:border-0 last:pb-0 first:pt-0 group">
+                    <h3 className="font-bold text-[14.5px] text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">{edu.school}</h3>
+                    <p className="text-[12px] text-black dark:text-[#ececec] font-medium mb-1">{edu.degree}</p>
+                    <p className="text-[11px] text-black dark:text-[#ececec] font-medium uppercase tracking-wider">{edu.year}</p>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          </div>
+          <div>
             <Section title="Skills & Interests">
               <div className="space-y-5 ml-1 py-1">
                 <div>
                   <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Hardware & Software</h3>
                   <p className="text-[12px] text-black dark:text-[#ececec] font-medium leading-relaxed">Installation, configuration, troubleshooting, system maintenance</p>
                 </div>
-                
                 <div>
                   <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Software Tools</h3>
                   <p className="text-[12px] text-black dark:text-[#ececec] font-medium leading-relaxed">Microsoft Office, Adobe Suite, antivirus solutions, backup and recovery tools</p>
                 </div>
-
                 <div>
                   <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Programming</h3>
                   <p className="text-[12px] text-black dark:text-[#ececec] font-medium leading-relaxed">Python, JavaScript, React.js, Node.js, SQL, WordPress, Next.js, Typescript, Claude Code, Lovable, Vercel</p>
                 </div>
-                
                 <div>
                   <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Networking</h3>
                   <p className="text-[12px] text-black dark:text-[#ececec] font-medium leading-relaxed">LAN/WAN setup, IP addressing, router and switch configuration, network troubleshooting</p>
                 </div>
               </div>
             </Section>
-
-          </div>
-
-        </div>
 
         {/* Gallery */}
         <Gallery />
