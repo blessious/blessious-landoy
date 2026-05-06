@@ -177,7 +177,7 @@ function App() {
 
             {/* About */}
             <Section title="About">
-              <div className="text-[13px] text-black dark:text-[#a1a1a1] space-y-4 leading-relaxed font-semibold">
+              <div className="text-[13.5px] text-black dark:text-[#a1a1a1] space-y-4 leading-relaxed font-semibold">
                 <p>
                   I am a Computer Engineering graduate dedicated to building high-performance, resilient software systems. My expertise lies in architecting complex full-stack solutions that solve real-world problems and automate intricate enterprise workflows.
                 </p>
@@ -197,7 +197,7 @@ function App() {
                   <h3 className="text-[13px] font-bold mb-2 text-black dark:text-white">Frontend</h3>
                   <div className="flex flex-wrap gap-x-3 gap-y-1">
                     {techStack.frontend.map(t => (
-                      <span key={t} className="text-[12px] font-bold text-gray-800 dark:text-[#a1a1a1] hover:text-black dark:hover:text-white transition-colors cursor-default">{t}</span>
+                      <span key={t} className="text-[12px] font-medium text-black dark:text-[#ececec] hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default">{t}</span>
                     ))}
                   </div>
                 </div>
@@ -205,7 +205,7 @@ function App() {
                   <h3 className="text-[13px] font-bold mb-2 text-black dark:text-white">Backend</h3>
                   <div className="flex flex-wrap gap-x-3 gap-y-1">
                     {techStack.backend.map(t => (
-                      <span key={t} className="text-[12px] font-bold text-gray-800 dark:text-[#a1a1a1] hover:text-black dark:hover:text-white transition-colors cursor-default">{t}</span>
+                      <span key={t} className="text-[12px] font-medium text-black dark:text-[#ececec] hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default">{t}</span>
                     ))}
                   </div>
                 </div>
@@ -213,7 +213,7 @@ function App() {
                   <h3 className="text-[13px] font-bold mb-2 text-black dark:text-white">Tools & Others</h3>
                   <div className="flex flex-wrap gap-x-3 gap-y-1">
                     {techStack.tools.map(tech => (
-                      <span key={tech} className="text-[12px] text-gray-500 dark:text-gray-400 font-bold hover:text-black dark:hover:text-white transition-colors cursor-default">{tech}</span>
+                      <span key={tech} className="text-[12px] text-black dark:text-[#ececec] font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default">{tech}</span>
                     ))}
                   </div>
                 </div>
@@ -312,22 +312,22 @@ function App() {
               <div className="space-y-5 ml-1 py-1">
                 <div>
                   <h3 className="text-[11px] font-bold text-black dark:text-white uppercase tracking-widest mb-2">Hardware & Software</h3>
-                  <p className="text-[11px] text-gray-500 dark:text-gray-400 font-bold leading-relaxed">Installation, configuration, troubleshooting, system maintenance</p>
+                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed">Installation, configuration, troubleshooting, system maintenance</p>
                 </div>
                 
                 <div>
                   <h3 className="text-[11px] font-bold text-black dark:text-white uppercase tracking-widest mb-2">Software Tools</h3>
-                  <p className="text-[11px] text-gray-500 dark:text-gray-400 font-bold leading-relaxed">Microsoft Office, Adobe Suite, antivirus solutions, backup and recovery tools</p>
+                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed">Microsoft Office, Adobe Suite, antivirus solutions, backup and recovery tools</p>
                 </div>
 
                 <div>
                   <h3 className="text-[11px] font-bold text-black dark:text-white uppercase tracking-widest mb-2">Programming</h3>
-                  <p className="text-[11px] text-gray-500 dark:text-gray-400 font-bold leading-relaxed">Python, JavaScript, React.js, Node.js, SQL, WordPress, Next.js, Typescript, Claude Code, Lovable, Vercel</p>
+                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed">Python, JavaScript, React.js, Node.js, SQL, WordPress, Next.js, Typescript, Claude Code, Lovable, Vercel</p>
                 </div>
                 
                 <div>
                   <h3 className="text-[11px] font-bold text-black dark:text-white uppercase tracking-widest mb-2">Networking</h3>
-                  <p className="text-[11px] text-gray-500 dark:text-gray-400 font-bold leading-relaxed">LAN/WAN setup, IP addressing, router and switch configuration, network troubleshooting</p>
+                  <p className="text-[11px] text-black dark:text-[#ececec] font-medium leading-relaxed">LAN/WAN setup, IP addressing, router and switch configuration, network troubleshooting</p>
                 </div>
               </div>
             </Section>
