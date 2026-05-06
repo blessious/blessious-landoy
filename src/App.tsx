@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Calendar, Mail, ChevronRight, Download, Moon, Sun, CheckCircle, Code2, Shield, Database, Cpu } from 'lucide-react';
 import ChatWidget from './components/ChatWidget';
+import Gallery from './components/Gallery';
 
 const techStack = {
   frontend: ["JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "WordPress"],
@@ -230,6 +231,9 @@ function App() {
                 ))}
               </div>
             </Section>
+
+            {/* Gallery */}
+            <Gallery />
 
             {/* Education */}
             <Section title="Education">
