@@ -66,7 +66,7 @@ const experience = [
 ];
 
 const Section = ({ title, children, viewAll = false }: { title: string, children: React.ReactNode, viewAll?: boolean }) => (
-  <section className="bg-[#f8f9fa] dark:bg-[#111] border border-gray-200 dark:border-[#222] p-4 mb-3 transition-colors duration-300">
+  <section className="bg-white dark:bg-[#111] shadow-sm p-4 mb-3 transition-colors duration-300">
     <div className="flex justify-between items-center mb-4">
       <h2 className="text-[18px] font-bold text-black dark:text-white">{title}</h2>
       {viewAll && (
@@ -112,7 +112,7 @@ function App() {
           </button>
 
           {/* Profile Picture */}
-          <div className="w-36 h-36 md:w-40 md:h-40 bg-gray-200 dark:bg-[#222] flex-shrink-0 border border-gray-200 dark:border-[#333] overflow-hidden relative rounded-none">
+          <div className="w-36 h-36 md:w-40 md:h-40 bg-gray-200 dark:bg-[#222] flex-shrink-0 shadow-sm overflow-hidden relative rounded-none">
             <img
               src="/ID-BLESS.png"
               alt="Blessious Joseph Landoy"
@@ -151,11 +151,11 @@ function App() {
                 Schedule a Call
                 <ChevronRight className="w-3.5 h-3.5 ml-1" />
               </a>
-              <a href="mailto:landoyblessious@gmail.com" className="bg-white dark:bg-transparent text-black dark:text-white border border-gray-200 dark:border-[#333] px-4 py-2 hover:bg-gray-50 dark:hover:bg-[#111] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center gap-2">
+              <a href="mailto:landoyblessious@gmail.com" className="bg-white dark:bg-[#111] text-black dark:text-white shadow-sm px-4 py-2 hover:bg-gray-50 dark:hover:bg-[#1c1c1c] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5" />
                 Send Email
               </a>
-              <a href="/resume.pdf" download className="bg-white dark:bg-transparent text-black dark:text-white border border-gray-200 dark:border-[#333] px-4 py-2 hover:bg-gray-50 dark:hover:bg-[#111] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center justify-between w-full sm:w-auto sm:flex-1 max-w-[160px]">
+              <a href="/resume.pdf" download className="bg-white dark:bg-[#111] text-black dark:text-white shadow-sm px-4 py-2 hover:bg-gray-50 dark:hover:bg-[#1c1c1c] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center justify-between w-full sm:w-auto sm:flex-1 max-w-[160px]">
                 <div className="flex items-center gap-2">
                   <Download className="w-3.5 h-3.5" />
                   Download CV
@@ -249,7 +249,7 @@ function App() {
 
             {/* Access Card */}
             {/* Access Card */}
-            <div className="bg-white dark:bg-[#1c1c1c] p-6 text-black dark:text-white relative overflow-hidden h-[340px] flex flex-col justify-between group hover:-translate-y-1 hover:rotate-[1deg] hover:shadow-xl transition-all duration-500 mb-3 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg">
+            <div className="bg-white dark:bg-[#1c1c1c] p-6 text-black dark:text-white relative overflow-hidden h-[340px] flex flex-col justify-between group hover:-translate-y-1 hover:rotate-[1deg] hover:shadow-xl transition-all duration-500 mb-3 rounded-2xl shadow-lg">
               <div className="absolute inset-0 bg-gradient-to-br from-black/5 via-transparent to-black/10 dark:from-white/10 dark:via-transparent dark:to-black/60 transition-opacity duration-500 group-hover:opacity-80"></div>
 
               <div className="relative z-10">
