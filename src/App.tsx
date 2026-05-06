@@ -177,7 +177,7 @@ function App() {
 
             {/* About */}
             <Section title="About">
-              <div className="text-[13.5px] text-black dark:text-[#a1a1a1] space-y-4 leading-relaxed font-semibold">
+              <div className="text-[13.5px] text-black dark:text-[#ececec] space-y-4 leading-relaxed font-medium">
                 <p>
                   I am a Computer Engineering graduate dedicated to building high-performance, resilient software systems. My expertise lies in architecting complex full-stack solutions that solve real-world problems and automate intricate enterprise workflows.
                 </p>
