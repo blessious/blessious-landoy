@@ -67,8 +67,8 @@ const experience = [
   }
 ];
 
-const Section = ({ title, children, viewAll = false }: { title: string, children: React.ReactNode, viewAll?: boolean }) => (
-  <section className="bg-white dark:bg-[#111] shadow-sm p-4 mb-3 transition-colors duration-300">
+const Section = ({ title, children, viewAll = false, className = "" }: { title: string, children: React.ReactNode, viewAll?: boolean, className?: string }) => (
+  <section className={`bg-white dark:bg-[#111] shadow-sm p-4 mb-3 transition-colors duration-300 ${className}`}>
     <div className="flex justify-between items-center mb-4">
       <h2 className="text-[18px] font-bold text-black dark:text-white">{title}</h2>
       {viewAll && (
@@ -293,9 +293,9 @@ function App() {
         </div>
 
         {/* Bottom Aligned Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-x-3 gap-y-0">
-          <div>
-            <Section title="Education">
+        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-x-3 gap-y-3 mb-3">
+          <div className="h-full">
+            <Section title="Education" className="h-full mb-0">
               <div className="space-y-0 ml-1">
                 {education.map((edu, i) => (
                   <div key={i} className="py-3 border-b border-gray-100 dark:border-[#222] last:border-0 last:pb-0 first:pt-0 group">
@@ -307,8 +307,8 @@ function App() {
               </div>
             </Section>
           </div>
-          <div>
-            <Section title="Skills & Interests">
+          <div className="h-full">
+            <Section title="Skills & Interests" className="h-full mb-0">
               <div className="space-y-5 ml-1 py-1">
                 <div>
                   <h3 className="text-[14.5px] font-bold text-black dark:text-white mb-0.5 group-hover:text-blue-600 transition-colors">Hardware & Software</h3>
