@@ -339,6 +339,10 @@ function App() {
         {/* Gallery */}
         <Gallery />
 
+        <footer className="mt-12 mb-8 text-center text-[12px] text-gray-500 dark:text-gray-500 font-medium">
+          <p>© 2026 Blessious Joseph Landoy. All rights reserved.</p>
+        </footer>
+
         {/* AI Chat Widget */}
         <ChatWidget />
 
