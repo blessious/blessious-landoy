@@ -274,8 +274,8 @@ function App() {
               ].map((item, i) => (
                 <div key={i} className="bg-white dark:bg-[#111] p-4 shadow-sm hover:-translate-y-0.5 transition-transform duration-300 cursor-default">
                   {item.icon}
-                  <h3 className="text-[12px] font-bold text-black dark:text-white mb-1">{item.title}</h3>
-                  <p className="text-[10px] font-medium text-black dark:text-[#ececec] leading-tight">{item.desc}</p>
+                  <h3 className="text-[14px] font-bold text-black dark:text-white mb-1">{item.title}</h3>
+                  <p className="text-[11.5px] font-medium text-black dark:text-[#ececec] leading-tight">{item.desc}</p>
                 </div>
               ))}
             </div>
