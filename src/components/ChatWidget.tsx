@@ -152,11 +152,10 @@ export default function ChatWidget() {
       const reply = await askAI(messages, text);
       setMessages(prev => [...prev, { id: Date.now().toString() + 'r', role: 'assistant', text: reply }]);
     } catch (e: unknown) {
-      const errText = e instanceof Error ? e.message : 'Unknown error';
       setMessages(prev => [...prev, {
         id: Date.now().toString() + 'r',
         role: 'assistant',
-        text: `DEBUG: ${errText}`
+        text: 'Sorry, I couldn\'t process that. Please try again in a moment!'
       }]);
     } finally {
       setLoading(false);
@@ -182,7 +181,7 @@ export default function ChatWidget() {
       .catch((e: unknown) => setMessages(prev => [...prev, {
         id: Date.now().toString() + 'r',
         role: 'assistant',
-        text: `DEBUG: ${e instanceof Error ? e.message : 'Unknown error'}`
+        text: 'Sorry, I couldn\'t process that. Please try again in a moment!'
       }]))
       .finally(() => setLoading(false));
   };
